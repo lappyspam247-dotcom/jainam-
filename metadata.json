@@ -1,0 +1,8 @@
+{
+  "name": "MA Thick Shakes",
+  "description": "A premium, interactive, and visually stunning website for MA Thick Shakes, showcasing rich indulgent flavors, interactive thick shake builder, and location finder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

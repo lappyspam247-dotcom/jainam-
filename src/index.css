@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;850;900&family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-cream: #FFFCF7;
+  --color-luxury-gold: #cfa853;
+  --color-luxury-gold-dark: #b58d34;
+  --color-cocoa-50: #FAF5EE;
+  --color-cocoa-100: #F3ECE0;
+  --color-cocoa-200: #E6D5BE;
+  --color-cocoa-300: #D5BC98;
+  --color-cocoa-500: #B58448;
+  --color-cocoa-800: #543615;
+  --color-cocoa-900: #2F1E0B;
+  --color-cocoa-950: #1B1005;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-cocoa-950);
+  color: var(--color-cocoa-50);
+}
+
+/* Beautiful custom velvet-brown scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cocoa-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-cocoa-800);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cocoa-500);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(47, 30, 11, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(213, 188, 152, 0.1);
+}
+
+.glass-panel-light {
+  background: rgba(255, 252, 247, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(84, 54, 21, 0.08);
+}
+
